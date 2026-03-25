@@ -1,6 +1,8 @@
 # 🐾 Animais - Landing Page
 
-![Preview do Projeto](./img/preview.png)
+![Preview do Projeto](<img width="1100" height="855" alt="image" src="https://github.com/user-attachments/assets/ff33fba0-8221-42a1-9d19-1601aec18192" />
+<img width="1100" height="855" alt="image" src="https://github.com/user-attachments/assets/ff33fba0-8221-42a1-9d19-1601aec18192" />
+)
 
 🔗 **Acesse o projeto online:**
 https://devcleyt.github.io/Animais-fantasticos/
