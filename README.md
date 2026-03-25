@@ -1,4 +1,4 @@
-# 🐾 Clínica Veterinária - Landing Page
+# 🐾 Animais - Landing Page
 
 ![Preview do Projeto](./img/preview.png)
 
