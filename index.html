@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animais Fantásticos</title>
+
+    <link rel="stylesheet" href="style/style.css" />
+    <script type="module" src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div data-cor="azul"></div>
+
+      <nav class="menu" data-menu="suave">
+        <button
+          class="btn-mobile"
+          aria-label="Abrir Menu"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span class="hamburger"></span>
+        </button>
+        <ul>
+          <li><a href="#animais">Animais</a></li>
+          <li data-dropdown>
+            <a href="sobre.html">sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="empresa.html">A Empresa</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Socios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
+            </ul>
+          </li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a href="#abrirModal" id="abrir">Login</a></li>
+          <li><a href="#rodape">Dev →</a></li>
+        </ul>
+      </nav>
+
+      <!-- ANIMAIS -->
+      <section class="grid-section animais" data-anime="scroll" id="animais">
+        <h1 class="titulo">Animais <span>Fantásticos</span></h1>
+
+        <ul class="animais-lista" data-tab="menu">
+          <li><img src="img/imagem1.jpg" alt="Raposa" /></li>
+          <li><img src="img/imagem2.jpg" alt="Esquilo" /></li>
+          <li><img src="img/imagem3.jpg" alt="Urso" /></li>
+          <li><img src="img/imagem4.jpg" alt="Lobo" /></li>
+          <li><img src="img/imagem5.jpg" alt="Macaco" /></li>
+          <li><img src="img/imagem6.jpg" alt="Leão" /></li>
+        </ul>
+
+        <div class="animais-descricao" data-tab="content">
+          <section data-anime="show-right">
+            <h2>Raposa</h2>
+            <p>
+              As raposas são canídeos fascinantes, conhecidos pela sua
+              inteligência aguçada e adaptabilidade impressionante. Elas ocupam
+              um lugar único na natureza, situando-se em algum lugar entre a
+              lealdade de um cão e a agilidade independente de um gato.
+            </p>
+            <p>
+              Embora existam várias espécies (como a raposa-do-ártico ou o
+              feneco), a raposa-vermelha é a mais icônica.
+            </p>
+          </section>
+
+          <section data-anime="show-right">
+            <h2>Esquilo</h2>
+            <p>
+              Os esquilos são pequenos mamíferos roedores pertencentes à família
+              Sciuridae, conhecidos por sua agilidade impressionante,
+              comportamento frenético e, claro, por aquelas caudas felpudas
+              inconfundíveis.
+            </p>
+            <p>
+              Embora existam mais de 200 espécies (desde o minúsculo
+              esquilo-pigmeu até a marmota), a maioria compartilha traços
+              comuns.
+            </p>
+          </section>
+
+          <section data-anime="show-down">
+            <h2>Urso</h2>
+            <p>
+              Os ursos são alguns dos mamíferos mais fascinantes e imponentes do
+              planeta. Eles pertencem à família Ursidae e, apesar de serem
+              classificados como carnívoros, a maioria possui uma dieta bastante
+              variada.
+            </p>
+            <p>
+              Os ursos compartilham traços físicos distintos que os tornam
+              facilmente reconhecíveis, como o corpo robusto.
+            </p>
+          </section>
+
+          <section data-anime="show-down">
+            <h2>Lobo</h2>
+            <p>
+              O lobo (Canis lupus) é um dos predadores mais icônicos e
+              fascinantes da natureza. Como o maior membro da família dos
+              canídeos (a mesma dos cães domésticos), ele é o símbolo máximo da
+              vida selvagem e da estrutura social complexa.
+            </p>
+            <p>
+              Os lobos são projetados pela evolução para a resistência e a caça
+              eficiente.
+            </p>
+          </section>
+
+          <section data-anime="show-right">
+            <h2>Macaco</h2>
+            <p>
+              Os macacos são primatas fascinantes que se destacam pela
+              inteligência, agilidade e comportamento social complexo. Eles
+              habitam majoritariamente florestas tropicais, mas sua diversidade
+              é imensa.
+            </p>
+            <p>
+              Embora variem muito de tamanho — desde o pequeno sagui-leãozinho
+              (que cabe na palma da mão) até o robusto mandril — a maioria
+              compartilha traços comuns.
+            </p>
+          </section>
+
+          <section data-anime="show-right">
+            <h2>Leão</h2>
+            <p>
+              Majestoso, imponente e símbolo de poder, o leão (Panthera leo) é o
+              único felino verdadeiramente social e um dos maiores predadores do
+              planeta. Conhecido como o "Rei da Selva" (embora habite
+              preferencialmente savanas e campos abertos), ele possui
+              características únicas que o distinguem de qualquer outro animal.
+            </p>
+            <p>
+              O leão apresenta um corpo musculoso e alongado, adaptado para a
+              força bruta em vez de longas perseguições.
+            </p>
+          </section>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="grid-section faq" data-anime="scroll" id="faq">
+        <h1 class="titulo">FAQ</h1>
+
+        <dl class="faq-lista" data-anime="acordion">
+          <dt>Qual a idade dos animais?</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur.</dd>
+
+          <dt>Eles são fantásticos?</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
+
+          <dt>Qual a diferença?</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
+
+          <dt>Como proteger?</dt>
+          <dd>Lorem ipsum dolor sit amet consectetur adipisicing.</dd>
+        </dl>
+      </section>
+
+      <section class="grid-section numeros" data-anime="scroll">
+        <h1 class="titulo">Números</h1>
+        <div class="numeros-grid">
+          <!-- <div class="numero-animal">
+            <h3>lobos</h3>
+            <span data-numero>5405</span>
+          </div>
+
+          <div class="numero-animal">
+            <h3>Leão</h3>
+            <span data-numero>3901</span>
+          </div>
+
+          <div class="numero-animal">
+            <h3>esquilos</h3>
+            <span data-numero>5490</span>
+          </div>
+
+          <div class="numero-animal">
+            <h3>Ursos</h3>
+            <span data-numero>6431</span>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section class="grid-section contato" data-anime="scroll" id="contato">
+        <h1 class="titulo">Contato</h1>
+
+        <div class="mapa">
+          <img src="img/mapa.png" alt="Mapa de localização" />
+        </div>
+
+        <ul class="dados">
+          <li>pereiradossantoscleyton@gmail.com</li>
+          <li>(11) 975987835</li>
+          <li>linkedin.com/in/cleyton-pereira-santos-1b869a190</li>
+          <li>São Paulo - SP</li>
+          <li>Doe <span class="btc-preco">0</span> Bitcoin para ajudar os animais</li>
+          <li
+            data-semana="1,2,3,4,5"
+            data-horario="8,18"
+            class="aberto fechado"
+          >Seg à sex das 08:00 às 18:00
+          </li>
+        </ul>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="copy" id="rodape">
+        <p>
+          © <span id="year"></span>
+          <strong>Cleyton Pereira dos Santos</strong> • Desenvolvedor Front-end
+        </p>
+      </footer>
+    </div>
+
+    <section>
+      <div class="modal-container">
+        <div class="modal">
+          <button class="fechar">x</button>
+
+          <form>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" />
+
+            <label for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" />
+
+            <button type="submit" id="btnInput">Entrar</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

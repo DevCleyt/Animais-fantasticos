@@ -1,0 +1,138 @@
+/* RESET BÁSICO OPCIONAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body.modal-aberto{
+  overflow: hidden;
+  padding-right: 15px;
+}
+
+/* BOTÃO ABRIR MODAL */
+#abrirModal {
+  display: inline-block;
+  background-color: #e54;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#abrirModal:hover {
+  background-color: rgb(163, 56, 44);
+}
+
+/* CONTAINER DO MODAL (overlay) */
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* começa escondido */
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease;
+}
+
+
+/* Quando estiver ativo */
+.modal-container.ativo {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* CAIXA DO MODAL */
+.modal {
+  background-color: white;
+  padding: 40px;
+  border: 10px solid #fb5;
+  box-shadow: 0 0 0 10px white;
+  position: relative;
+  min-width: 300px;
+  border-radius: 8px;
+
+  transform: translateY(-20px);
+  transition: 0.3s ease;
+}
+
+/* Pequena animação ao abrir */
+.modal-container.ativo .modal {
+  transform: translateY(0);
+}
+
+/* FORM */
+.modal label {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  font-weight: bold;
+  margin: 1rem 0 0.5rem 0;
+}
+
+.modal input {
+  width: 100%;
+  padding: 0.7rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.modal input:focus {
+  outline: none;
+  border-color: #e54;
+  box-shadow: 0 0 5px rgba(238, 85, 68, 0.5);
+}
+
+/* BOTÃO ENTRAR */
+#btnInput {
+  display: block;
+  background-color: #e54;
+  border: none;
+  border-radius: 4px;
+  padding: 0.7rem 2rem;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#btnInput:hover {
+  background-color: rgb(163, 56, 44);
+}
+
+/* BOTÃO FECHAR */
+.fechar {
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 50px;
+  height: 50px;
+  border: 4px solid white;
+  border-radius: 50%;
+  background-color: #e54;
+  font-size: 1.2rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  transition: 0.3s ease;
+}
+
+.fechar:hover {
+  background-color: rgb(163, 56, 44);
+}
