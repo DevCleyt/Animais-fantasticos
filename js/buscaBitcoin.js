@@ -9,17 +9,19 @@ export default async function initBitcoin() {
 
     const dados = await response.json();
 
-    const dadosCompra = {
-      compra: dados.BRL.buy.toLocaleString("pt-BR", {
-        style: "currency",
-        currency: "BRL"}
-    )};
+    const valorOriginal = dados.BRL.buy;
+
+    
+    const valorDoacao = valorOriginal / 10000;
+
+    const valorFormatado = valorDoacao.toLocaleString("pt-BR", {
+      style: "currency",
+      currency: "BRL"
+    });
 
     const btcPreco = document.querySelector(".btc-preco");
 
-    Object.entries(dadosCompra).forEach(([, valor]) => {
-      btcPreco.textContent = `R$ ${valor}`;
-    });
+    btcPreco.textContent = valorFormatado;
 
   } catch (erro) {
     console.log(erro);
